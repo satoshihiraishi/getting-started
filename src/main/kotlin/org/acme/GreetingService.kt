@@ -1,12 +1,10 @@
-package org.acme;
+package org.acme
 
-import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.enterprise.context.ApplicationScoped
 
 @ApplicationScoped
-public class GreetingService {
+class GreetingService {
 
-    public String greeting(String name) {
-        return "hello " + name;
-    }
+    fun greeting(name: String) = "hello " + name
 
 }

@@ -22,9 +22,9 @@ dependencies {
 group 'org.acme'
 version '1.0.0-SNAPSHOT'
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+kotlin {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 test {
@@ -38,10 +38,10 @@ allOpen {
 }
 
 compileKotlin {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_21
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17
     kotlinOptions.javaParameters = true
 }
 
 compileTestKotlin {
-    kotlinOptions.jvmTarget = JavaVersion.VERSION_21
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_17
 }
